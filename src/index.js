@@ -15,7 +15,7 @@ const Skeleton = ({ colors, width, height, center, circle, count, margin, classe
   }
   let element = null;
   if (count > 0) {
-    element = [...Array(count).keys()].map((_, key) => <span key={key} style={{ ...styleObj, marginBottom: `${margin}px` }} className={`react-skeleton ${classes}`}></span>)
+    element = [...Array(count).keys()].map((_, key) => <span key={key} style={{ ...styleObj, marginBottom: `${margin}px` }} className={`${classNames.reactSkeleton} ${classes}`}></span>)
   } else {
     element = <span className={`${classNames.reactSkeleton} ${classes}`} style={styleObj} />
   }
